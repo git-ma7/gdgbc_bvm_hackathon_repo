@@ -28,10 +28,10 @@ class Firebase {
 
   signOut = () => signOut(this.auth);
 
-  sendEmailVerificationLink = () =>
-    sendEmailVerification(this.auth.currentUser, {
-      url: process.env.REACT_APP_EMAIL_CONFIRMATION_REDIRECT,
-    });
+  // sendEmailVerificationLink = () =>
+  //   sendEmailVerification(this.auth.currentUser, {
+  //     url: process.env.REACT_APP_EMAIL_CONFIRMATION_REDIRECT,
+  //   });
 
   resetPassword = email => sendPasswordResetEmail(this.auth, email);
 
